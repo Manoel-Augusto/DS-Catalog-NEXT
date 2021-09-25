@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import { Navbar } from "../components";
 
 
 import "../styles/custom.scss";
@@ -22,6 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
         <title>DsCatalog NextJS</title>
       </Head>
+      <Navbar/>
 
       <Component {...pageProps} />
     </>
